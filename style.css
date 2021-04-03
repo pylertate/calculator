@@ -63,7 +63,7 @@ body button {
 .button {
   display: block;
   width: 10vh;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 0.5vh;
   text-align: center;
   margin-bottom: 0.5vh;
@@ -74,8 +74,9 @@ body button {
   font-size: 6vh;
   color: white;
   outline: none;
-
+text-align: center;
 -webkit-appearance: none;
+
 -webkit-border-radius: none;
 
 }
