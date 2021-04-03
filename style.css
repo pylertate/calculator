@@ -46,7 +46,7 @@ body button {
 #calcScreen div {
   margin-top: 2.55vh;
   text-align: end;
-  margin-right: .5vh;
+  margin-right: 0.5vh;
   color: #101d22;
 }
 #btnContainer {
@@ -59,27 +59,26 @@ body button {
   height: 47.5vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .button {
   display: block;
   width: 10vh;
-  margin: 0 auto;
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
   margin-top: 0.5vh;
-  text-align: center;
+
   margin-bottom: 0.5vh;
-  height: 8vh;
+  height: 8.5vh;
   border: #101d22 0.35vh solid;
   border-radius: 1vh;
   font-family: monospace;
   font-size: 6vh;
   color: white;
   outline: none;
-text-align: center;
--webkit-appearance: none;
 
--webkit-border-radius: none;
+  -webkit-appearance: none;
 
+  -webkit-border-radius: none;
 }
 .btnRow {
   display: flex;
@@ -110,6 +109,6 @@ text-align: center;
   font-size: 4vh;
 }
 
-#equals{
-    background-color: #e76f51;
+#equals {
+  background-color: #e76f51;
 }
