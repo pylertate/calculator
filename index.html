@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>CALCULATOR</h1>
+    </div>
+    <div id="calcBody">
+      <div id="calcScreen">
+        <div id="display">0</div>
+      </div>
+      <div id="btnContainer">
+        <div class="btnRow">
+          <input type="button" class="button" id="clear" value="AC"></input>
+          <input type="button" class="button negpos" value="+/-"></input>
+          <input type="button" class="button percent" value="%"></input>
+          <input type="button" class="button operator" value="&#247;"></input>
+        </div>
+        <div class="btnRow">
+          <input type="button" class="button num numBtn" value="9"></input>
+          <input type="button" class="button num numBtn" value="8"></input>
+          <input type="button" class="button num numBtn" value="7"></input>
+          <input type="button" class="button operator" value="*"></input>
+        </div>
+        <div class="btnRow">
+          <input type="button" class="button num numBtn" value="6"></input>
+          <input type="button" class="button num numBtn" value="5"></input>
+          <input type="button" class="button num numBtn" value="4"></input>
+          <input type="button" class="button operator" value="-"></input>
+        </div>
+        <div class="btnRow">
+          <input type="button" class="button num numBtn" value="3"></input>
+          <input type="button" class="button num numBtn" value="2"></input>
+          <input type="button" class="button num numBtn" value="1"></input>
+          <input type="button" class="button operator" value="+"></input>
+        </div>
+        <div class="btnRow">
+            <input type="button" class="button num numBtn" id="zero" value="0"></input>
+            <input type="button" class="button" id="period" value="."></input>
+            <input type="button" class="button operator" value="="></input>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

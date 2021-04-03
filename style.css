@@ -1,0 +1,104 @@
+@font-face {
+  font-family: calculator;
+  src: url(./loopy/ComputoMonospace.ttf);
+}
+@font-face {
+  font-family: calcscreen;
+  src: url(./loopy/LcdSolid.ttf);
+}
+body {
+  background-color: #8ab17d;
+}
+button {
+  outline: none;
+}
+
+#header h1 {
+  font-family: calculator;
+  color: #101d22;
+  text-align: center;
+  margin-top: 8vh;
+  font-size: 8vh;
+}
+#calcBody {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #264653;
+  width: 50vh;
+  height: 65vh;
+  border-radius: 1vh;
+}
+#calcScreen {
+  background-color: rgb(193, 207, 193);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vh;
+  width: 47vh;
+  border-radius: 1vh;
+  height: 12vh;
+  font-family: calcscreen;
+  font-size: 7.5vh;
+  border: 0.67vh solid #101d22;
+}
+#calcScreen div {
+  margin-top: 2.55vh;
+  text-align: end;
+  margin-right: 1vh;
+  color: #101d22;
+}
+#btnContainer {
+  border: 0.67vh #101d22 solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5vh;
+  border-radius: 1vh;
+  width: 47vh;
+  height: 47.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.button {
+  display: block;
+  width: 10vh;
+  margin: auto;
+  margin-top: 0.5vh;
+  text-align: center;
+  margin-bottom: 0.5vh;
+  height: 8vh;
+  border: #101d22 0.35vh solid;
+  border-radius: 1vh;
+  font-family: monospace;
+  font-size: 6vh;
+  color: white;
+}
+.btnRow {
+  display: flex;
+  justify-content: space-between;
+}
+.num {
+  background-color: #2a9d8f;
+}
+.operator {
+  background-color: #e76f51;
+}
+#period {
+  background-color: #2a9d8f;
+}
+#clear {
+  background-color: #efb366;
+  font-size: 5vh;
+}
+#zero {
+  width: 22vh;
+}
+
+.percent {
+  background-color: #83d9f3;
+}
+.negpos {
+  background-color: #83d9f3;
+  font-size: 4vh;
+}
