@@ -9,7 +9,7 @@
 body {
   background-color: #8ab17d;
 }
-button {
+body button {
   outline: none;
 }
 
@@ -73,6 +73,7 @@ button {
   font-family: monospace;
   font-size: 6vh;
   color: white;
+  outline: none;
 }
 .btnRow {
   display: flex;
@@ -101,4 +102,8 @@ button {
 .negpos {
   background-color: #83d9f3;
   font-size: 4vh;
+}
+
+#equals{
+    background-color: #e76f51;
 }
