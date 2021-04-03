@@ -73,6 +73,10 @@ button {
   font-family: monospace;
   font-size: 6vh;
   color: white;
+
+-webkit-appearance: none;
+-webkit-border-radius: none;
+
 }
 .btnRow {
   display: flex;
