@@ -11,6 +11,7 @@ body {
 }
 body button {
   outline: none;
+  -webkit-text-size-adjust: 100%
 }
 
 #header h1 {
@@ -20,6 +21,9 @@ body button {
   margin-top: 8vh;
   width: 100%;
   font-size: 45px;
+}
+#calcWrapper{
+  width: 100%;
 }
 #calcBody {
   margin-left: auto;
