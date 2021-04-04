@@ -8,10 +8,10 @@
 }
 body {
   background-color: #8ab17d;
+  -webkit-text-size-adjust: 100%;
 }
 body button {
   outline: none;
-  -webkit-text-size-adjust: 100%
 }
 
 #header h1 {
@@ -22,8 +22,8 @@ body button {
   width: 100%;
   font-size: 45px;
 }
-#calcWrapper{
-  width: 100%;
+#calcWrapper {
+  min-width: 500px;
 }
 #calcBody {
   margin-left: auto;
@@ -71,7 +71,6 @@ body button {
   width: 80px;
   margin: 0 auto;
 
-  
   height: 75px;
   border: #101d22 2px solid;
   border-radius: 10px;
@@ -101,15 +100,12 @@ body button {
 #period {
   background-color: #2a9d8f;
   padding: none;
-  
-  
 }
 #clear {
   background-color: #efb366;
   font-size: 40px;
   text-align: center;
   padding: none;
-  
 }
 #zero {
   width: 162px;
@@ -120,28 +116,26 @@ body button {
   background-color: #83d9f3;
   text-align: center;
   padding: none;
-  
 }
 .negPos {
   background-color: #83d9f3;
   font-size: 20px;
   text-align: center;
- 
 }
 
 #equals {
   background-color: #e76f51;
   text-align: center;
   padding: none;
-  
 }
 .footer {
   font-family: calculator;
-  position: absolute;
+  position: relative;
 
   justify-content: space-between;
   bottom: 0;
-height: 20px;
+  height: 30px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -150,7 +144,6 @@ height: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
-
 
 #logo {
   width: 5vh;
