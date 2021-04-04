@@ -19,7 +19,7 @@ body button {
   text-align: center;
   margin-top: 8vh;
   width: 100%;
-  font-size: 6vh;
+  font-size: 45px;
 }
 #calcBody {
   margin-left: auto;
@@ -27,52 +27,50 @@ body button {
   display: flex;
   flex-direction: column;
   background-color: #264653;
-  width: 45vh;
-  height: 65vh;
-  border-radius: 1vh;
+  width: 355px;
+  height: 520px;
+  border-radius: 3px;
 }
 #calcScreen {
   background-color: rgb(193, 207, 193);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5vh;
-  width: 42vh;
+  margin-top: 5px;
+  width: 335px;
   border-radius: 1vh;
-  height: 12vh;
+  height: 90px;
   font-family: calcscreen;
-  font-size: 7.5vh;
-  border: 0.67vh solid #101d22;
+  font-size: 59px;
+  border: 5px solid #101d22;
 }
 #calcScreen div {
-  margin-top: 2.55vh;
+  margin-top: 20px;
   text-align: end;
-  margin-right: 0.5vh;
+  margin-right: 5px;
   color: #101d22;
 }
 #btnContainer {
-  border: 0.67vh #101d22 solid;
+  border: 5px #101d22 solid;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5vh;
   border-radius: 1vh;
-  width: 42vh;
-  height: 47.5vh;
+  width: 335px;
+  height: 397px;
   display: flex;
   flex-direction: column;
 }
 .button {
   display: block;
-  width: 11vh;
-  margin-left: 0.5vh;
-  margin-right: 0.5vh;
-  margin-top: 0.5vh;
+  width: 100px;
+  margin: 0 auto;
 
-  margin-bottom: 0.5vh;
-  height: 8.5vh;
-  border: #101d22 0.35vh solid;
-  border-radius: 1vh;
+  
+  height: 79px;
+  border: #101d22 2px solid;
+  border-radius: 5px;
   font-family: monospace;
-  font-size: 6vh;
+  font-size: 50px;
   color: white;
   outline: none;
 
@@ -97,16 +95,18 @@ body button {
 #period {
   background-color: #2a9d8f;
   padding: none;
-  width: 10vh;
+  
+  width: 100px;
 }
 #clear {
   background-color: #efb366;
-  font-size: 5vh;
+  font-size: 40px;
   text-align: center;
   padding: none;
+  width: 100px;
 }
 #zero {
-  width: 22vh;
+  width: 209px;
   text-align: center;
 }
 
@@ -114,20 +114,20 @@ body button {
   background-color: #83d9f3;
   text-align: center;
   padding: none;
-  width: 10vh;
+  width: 100px;
 }
 .negPos {
   background-color: #83d9f3;
-  font-size: 3vh;
+  font-size: 20px;
   text-align: center;
-  width: 10vh;
+  width: 100px;
 }
 
 #equals {
   background-color: #e76f51;
   text-align: center;
   padding: none;
-  width: 10vh;
+  width: 100px;
 }
 .footer {
   font-family: calculator;
@@ -135,14 +135,14 @@ body button {
 
   justify-content: space-between;
   bottom: 0;
-
+height: 2vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
   width: 100%;
-  margin-left: 1vh;
-  margin-right: 1vh;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
