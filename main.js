@@ -2,8 +2,10 @@ const numBtn = document.querySelectorAll(".numBtn");
 const screen = document.querySelector("#display");
 const operator = document.querySelectorAll(".operator");
 const clearBtn = document.querySelector("#clear");
-let equalBtn = document.querySelector("#equals");
-let periodBtn = document.querySelector("#period");
+const equalBtn = document.querySelector("#equals");
+const periodBtn = document.querySelector("#period");
+const negPosBtn = document.querySelector(".negPos");
+const percentBtn = document.querySelector(".percent")
 let display = "";
 let a;
 let b;
@@ -28,7 +30,7 @@ operator.forEach((button) =>
         o = button.value;
         console.log(o);
         display = "";
-        screen.innerHTML = display;
+        screen.innerHTML = 0;
         isOperator = true;
         isPeriod = false;
         break;
@@ -79,6 +81,22 @@ periodBtn.addEventListener("click", () => {
       break;
   }
 });
+negPosBtn.addEventListener("click", (newNum) => {
+  newNum = negPos(display);
+  if(newNum.toString().length>=9){
+      return
+  }
+  display = newNum;
+  screen.innerHTML = display;
+  return;
+});
+percentBtn.addEventListener("click", ()=>{
+    if (display.toString().length>=9) return;
+    else
+    display = display / 100;
+    screen.innerHTML = display
+    return;
+})
 add = (a, b) => {
   return Number(a) + Number(b);
 };
@@ -108,16 +126,29 @@ operate = (a, b, o) => {
       result = divide(a, b);
       break;
   }
-  if (result> 999999999) result = "error";
-  if (result.toString().length>9){
-      decimal(result)
+  if (result > 999999999 || result < -99999999) result = "ERROR";
+  if (result.toString().length > 9) {
+    result = decimal(result);
   }
-  
-  else return result;
 
-  return;
+  return result;
 };
-
+decimal = (result) => {
+  result = result.toString().slice(0, 9);
+  return result;
+};
 clear = () => {
   screen.innerHTML = "";
+};
+negPos = (display) => {
+  display = display.toString();
+  if (Number(display) > 0) {
+    display = "-" + display;
+    return display;
+  }
+  if (Number(display) < 0) {
+    display = display.toString().slice(1);
+    return display;
+  }
+  return display;
 };

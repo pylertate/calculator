@@ -62,7 +62,7 @@ body button {
 }
 .button {
   display: block;
-  width: 10vh;
+  width: 11vh;
   margin-left: 0.5vh;
   margin-right: 0.5vh;
   margin-top: 0.5vh;
@@ -75,40 +75,58 @@ body button {
   font-size: 6vh;
   color: white;
   outline: none;
-
+  
   -webkit-appearance: none;
 
   -webkit-border-radius: none;
 }
 .btnRow {
   display: flex;
-  justify-content: space-between;
+  padding: none;
+  
 }
 .num {
   background-color: #2a9d8f;
+  text-align: center;
+  padding: none;
 }
 .operator {
   background-color: #e76f51;
+  text-align: center;
+  padding: none;
 }
 #period {
   background-color: #2a9d8f;
+  padding: none;
+  width: 10vh;
 }
 #clear {
   background-color: #efb366;
   font-size: 5vh;
+  text-align: center;
+  padding: none;
 }
 #zero {
-  width: 21vh;
+  width: 22vh;
+  text-align: center;
 }
 
 .percent {
   background-color: #83d9f3;
+  text-align: center;
+  padding: none;
+  width: 10vh;
 }
-.negpos {
+.negPos {
   background-color: #83d9f3;
-  font-size: 4vh;
+  font-size: 3vh;
+  text-align: center;
+  width: 10vh;
 }
 
 #equals {
   background-color: #e76f51;
+  text-align: center;
+  padding: none;
+  width: 10vh;
 }
