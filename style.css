@@ -73,8 +73,7 @@ body button {
   display: block;
   width: 80px;
   margin: 0 auto;
-
-  
+  position: relative;
   height: 75px;
   border: #101d22 2px solid;
   border-radius: 10px;
@@ -90,7 +89,9 @@ body button {
 .btnRow {
   display: flex;
   padding: none;
+  max-width: 335px;
 }
+
 .num {
   background-color: #2a9d8f;
   text-align: center;
@@ -140,11 +141,11 @@ body button {
 }
 .footer {
   font-family: calculator;
-  position: relative;
+  position: fixed;
 
   justify-content: space-between;
   bottom: 0;
-height: 30px;
+
 padding-top: 20px;
   display: flex;
   flex-direction: row;
