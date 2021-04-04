@@ -5,7 +5,7 @@ const clearBtn = document.querySelector("#clear");
 const equalBtn = document.querySelector("#equals");
 const periodBtn = document.querySelector("#period");
 const negPosBtn = document.querySelector(".negPos");
-const percentBtn = document.querySelector(".percent")
+const percentBtn = document.querySelector(".percent");
 let display = "";
 let a;
 let b;
@@ -65,8 +65,9 @@ equalBtn.addEventListener("click", () => {
   screen.innerHTML = result;
   a = result;
   b = "";
-  display = "";
+  display = result;
   isPeriod = false;
+  isOperator = false;
   return;
 });
 periodBtn.addEventListener("click", () => {
@@ -83,20 +84,19 @@ periodBtn.addEventListener("click", () => {
 });
 negPosBtn.addEventListener("click", (newNum) => {
   newNum = negPos(display);
-  if(newNum.toString().length>=9){
-      return
+  if (newNum.toString().length >= 9) {
+    return;
   }
   display = newNum;
   screen.innerHTML = display;
   return;
 });
-percentBtn.addEventListener("click", ()=>{
-    if (display.toString().length>=9) return;
-    else
-    display = display / 100;
-    screen.innerHTML = display
-    return;
-})
+percentBtn.addEventListener("click", () => {
+  if (display.toString().length >= 9) return;
+  else display = display / 100;
+  screen.innerHTML = display;
+  return;
+});
 add = (a, b) => {
   return Number(a) + Number(b);
 };
@@ -126,7 +126,9 @@ operate = (a, b, o) => {
       result = divide(a, b);
       break;
   }
-  if (result > 999999999 || result < -99999999) result = "ERROR";
+  if (result > 999999999 || result < -99999999) {
+    result = "ERROR";
+  }
   if (result.toString().length > 9) {
     result = decimal(result);
   }
