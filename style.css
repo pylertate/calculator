@@ -59,16 +59,17 @@ body button {
   height: 397px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .button {
   display: block;
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
 
   
-  height: 79px;
+  height: 75px;
   border: #101d22 2px solid;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: monospace;
   font-size: 50px;
   color: white;
@@ -96,17 +97,17 @@ body button {
   background-color: #2a9d8f;
   padding: none;
   
-  width: 100px;
+  
 }
 #clear {
   background-color: #efb366;
   font-size: 40px;
   text-align: center;
   padding: none;
-  width: 100px;
+  
 }
 #zero {
-  width: 209px;
+  width: 162px;
   text-align: center;
 }
 
@@ -114,20 +115,20 @@ body button {
   background-color: #83d9f3;
   text-align: center;
   padding: none;
-  width: 100px;
+  
 }
 .negPos {
   background-color: #83d9f3;
   font-size: 20px;
   text-align: center;
-  width: 100px;
+ 
 }
 
 #equals {
   background-color: #e76f51;
   text-align: center;
   padding: none;
-  width: 100px;
+  
 }
 .footer {
   font-family: calculator;
